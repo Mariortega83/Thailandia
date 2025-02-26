@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* footer start */
+
+footer {
+    height: 700px;
+    width: 100%;
+    background-color: #347537a9;
+    color: white;
+    text-align: center;
+
+    font-family: Montserrat;
+    top: 0;
+}
+
+.container-footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.up {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+    gap: 2rem;
+}
+
+.down {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.side1 {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.side1 h2 {
+    margin-bottom: 1rem;
+}
+
+.social-foot-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-foot {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.phone-foot {
+    background-image: url('../icons/telephone.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+    filter: invert(100%);
+  
+}
+
+.email-foot {
+    background-image: url('../icons/message.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+    filter: invert(100%);
+  
+}
+
+.profile-foot {
+
+    background-color: white;
+    background-image: url('../img/profile.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+  
+}
+
+
+
+.social-foot-content p{
+    font-size: 1.2rem;
+
+}
+
+.profile {
+    width: 60%;
+}
+
+.profile p {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.side2 {
+    text-align: left;
+}
+
+
+.html-links {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.html-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+.side3 {
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+
+    font-family: Montserrat;
+}
+.newsletter-form input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+
+}
+
+.newsletter-form input::placeholder {
+    color: #888;
+    font-size: 1.3rem;
+}
+.newsletter-form button {
+    background: linear-gradient(45deg, #2E7D32, #1B5E20);
+    color: white;
+    border: none;
+    padding: 1rem 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+.newsletter-form button:hover {
+    background: linear-gradient(45deg, #1B5E20, #2E7D32);
+    transform: scale(1.05);
+}
+
+.right-side {
+    flex: 1 1 50%;
+    align-self: center;
+    text-align: left;
+    width: 50%;
+}
+
+.rside2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    text-align: left;
+
+    border-top: 1px solid white;
+
+}
+
+.rside2 a {
+   
+    font-family: Montserrat;
+    text-align: left;
+    gap: 2rem;
+    color: white;
+
+    text-decoration: none;
+}
+.side {
+    flex: 1 1 25%;
+}
+
+
+.privacy-policy a {
+    text-align: center;
+}
+
+.desging-by {
+    text-align: right;
+}
+
+/* footer start */
