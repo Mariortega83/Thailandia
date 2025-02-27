@@ -1,0 +1,138 @@
+.separador {
+    height: 50vh;
+}
+/* Basic styling */
+.container {
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+     max-height: 660px;
+    
+    background-color: #f9f9f9;
+}
+
+.route1 {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.r1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.r-ph { 
+    flex:50% 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+.content {
+    flex: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    height: 600px;
+
+    font-family: Montserrat;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.d1-ph {
+    background-image: url("../img/fondo.jpg");
+}
+
+.d2-ph {
+    background-image: url("../img/mascara-brillo.jpg");
+}
+
+.d3-ph {
+    background-image: url("../img/profile.png");
+}
+
+.d4-ph {
+    background-image: url("../img/pexels-pixabay-161183.jpg");
+}
+
+.d5-ph {
+    background-image: url("../img/pexels-freestockpro-1031780.jpg");
+}
+
+.d6-ph {
+    background-image: url("../img/logo.png");
+}
+
+.d7-ph {
+    background-image: url("../img/pexels-pixabay-159144.jpg");
+}
+
+/* Estilos para los bullets del carousel */
+.glide__bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.glide__bullet {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.glide__bullet:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.glide__bullet--active {
+    background-color: #347537;
+    color: white;
+    box-shadow: 0 3px 8px rgba(52, 117, 55, 0.3);
+}
+

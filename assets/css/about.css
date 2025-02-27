@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dangrek&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hero start */
+
+.hero {
+    background-image: url("../img/galeria/about-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7rem;
+    color: #fff;
+    margin-left: 10%;
+}
+
+.linea {
+    width: 20%;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 1%;
+    margin-top: 3%;
+
+    border: 0;
+}
+
+.hueco {
+    font-size: 12rem;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgb(88, 88, 88);
+    color: transparent;
+}
+
+.hueco-1 {
+    font-size: 8rem;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(88, 88, 88);
+    color: transparent;
+}
+
+
+/* hero end */
+
+/* hero2 */
+
+
+.hero-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+}
+
+.hero-container {
+    display: flex;
+    gap: 2rem;
+    width: 80%;
+}
+
+.hero-box {
+    flex: 1;
+    padding: 1rem;
+    background: white;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box h2 {
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero-box p {
+    font-family: Montserrat;
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn {
+    font-family: Montserrat;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+    background-color: #347537a9;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #418f44a9;
+}
+
+/* hero2 end */
+
+/* instituions */
+
+.country-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+    padding: 2rem;
+}
+
+.country-info h1 {
+    font-family: Montserrat;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-photo {
+    flex: 50% 0;
+    background-color: #347537a9;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: justify;
+    padding: clamp(2rem, 4vw, 4rem);
+
+}
+
+.span-grey {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+}
+
+.container-text h2 {
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 600;
+
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.container-text h3 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(39, 39, 39);
+    margin-bottom: 1rem;
+}
+
+.container-text p {
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.photo1 {
+    aspect-ratio: 5/3;
+    background-image: url('../img/galeria/goverm¡nment.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.photo2 {
+    aspect-ratio: 5/3;
+    background-image: url('../img/galeria/banco.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.container-reverse {
+    flex-flow: row-reverse;
+}
+
+.photo3 {
+    aspect-ratio: 5/3;
+    background-image: url('../img/galeria/university.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* end institutions */
+
+.div-con-imagen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/galeria/turismo2.jpg');
+    /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.div-con-imagen::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 70% 100%);
+    z-index: 0;
+    /* Esto asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.of-container {
+    position: relative;
+    z-index: 1;
+    /* Esto asegura que el contenedor esté por encima del fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+
+    gap: 3rem;
+}
+
+.of-photo {
+    flex: 1;
+    aspect-ratio: 5/3;
+    background-image: url('../img/galeria/turismo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    padding: 4rem;
+}
+
+.of-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    text-align: justify;
+}
+
+.of-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.of-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.interactive-buttons {
+    margin-top: 20px;
+    gap: 2rem;
+}
+
+.btn-info,
+.btn-website {
+    font-family: Montserrat;
+    display: inline-block;
+    background-color: #347537a9;
+    color: white;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover,
+.btn-website:hover {
+    background-color: #347537a9;
+}
+
+/* famous */
+
+.famous {
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: #ffffff;
+    gap: 2rem;
+}
+
+.famous h1 {
+    font-family: Montserrat;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.famous-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:baseline;
+    align-items: center;
+    padding: 4rem 8rem;
+    gap: 2rem;
+
+    
+}
+
+.famous-container .person:nth-of-type(2) {
+    flex-direction: row-reverse;
+    margin-left: auto; 
+}
+
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px; /* You can adjust the max width */
+}
+
+
+.big-photo1 {
+    flex: 2;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/galeria/rey1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.big-photo2 {
+    flex: 2;
+    aspect-ratio: 1 / 1;
+    background-image: url('../img/galeria/misnistra2.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.big-photo3 {
+    flex: 2;
+    aspect-ratio: 1/1;
+    background-image: url('../img/galeria/rodatang.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.mini-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.mini1, .mini2, .mini3, .mini4, .mini5, .mini6 {
+    flex: 1;
+    aspect-ratio: 1/1;
+    background-color: antiquewhite;
+}
+
+.mini1 {
+    background-image: url("../img/galeria/rey2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mini2 {
+    background-image: url("../img/galeria/rey3.jpg");
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+}
+
+.mini3 {
+    background-image: url("../img/galeria/ministra1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mini4 {
+    background-image: url("../img/galeria/ministra3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mini5 {
+    background-image: url("../img/galeria/rodtang3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mini6 {
+    background-image: url("../img/galeria/rodtang2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.person-content {
+    flex: 2;
+    padding: 2rem;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    color: #333; 
+     
+}
+
+.famous-container .person:nth-of-type(2) .person-content {
+    margin-right: 3rem; /* Empuja el contenido hacia la derecha */
+    text-align: justify; /* Alinea el texto a la derecha */
+}
+
+.famous-container .person:nth-of-type(odd) .person-content {
+    margin-left: 3rem; /* Empuja el contenido hacia la derecha */
+    text-align: justify; /* Alinea el texto a la derecha */
+}
+
+
+
+.person-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222; /* Color oscuro para resaltar el nombre */
+    margin-bottom: 0.5rem;
+}
+
+.person-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555; /* Color más suave para el subtítulo */
+    margin-bottom: 1rem;
+}
+
+.person-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444; /* Color de párrafo */
+}
+
+.person-content p strong {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black; 
+    margin-bottom: 0.5rem;
+}
+/* Contenedor general del overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre iconos */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hace que el overlay aparezca cuando pasas el mouse */
+.big-photo1:hover .overlay,
+.big-photo2:hover .overlay,
+.big-photo3:hover .overlay,
+.mini-photos:hover .overlay {
+    opacity: 1;
+}
+
+/* Estilos de los iconos de redes sociales */
+.overlay a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem; /* Tamaño uniforme para los íconos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Hace los iconos cuadrados */
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    border-radius: 50%; /* Hace los iconos redondos */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.overlay a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1); /* Efecto de crecimiento */
+}
+
+/* Posiciona el overlay correctamente dentro de cada imagen */
+.big-photo1, .big-photo2, .big-photo3,
+.mini1, .mini2, .mini3, .mini4, .mini5, .mini6 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* cities */
+
+.gallery {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.gallery h1 {
+    font-family: Montserrat;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-left: 3rem;
+}
+
+
+
+.grid-gallery {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay */
+.overlay-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Oscurece la imagen */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+}
+
+.grid-item:hover .overlay-2 {
+    opacity: 1;
+}
+
+/* Pestaña de información */
+.info {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-size: 2rem;
+
+
+}
+
+
+
+.border-span {
+    border-bottom: 1px solid white;
+    width: 50%;
+    margin: 1rem 0;
+
+}
+
+.info a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.overlay-2:hover .info a {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.info a:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+
+
+.grid-item:hover .info {
+    transform: translateY(0);
+}
+
+/* Clases para el grid */
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+ /* cities ebd */
+
+ /* sport */
+ .sport {
+    display: flex;
+    flex-flow: column ;
+    justify-content:baseline;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: #ffffff;
+    gap: 2rem;
+
+    height: 100%
+ }
+
+ .sport h1 {
+    font-family: Montserrat;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+ }
+
+ .sport-photo {
+    aspect-ratio: 16/9;
+    background-image: url('../img/galeria/pexels-fmaderebner-238636.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    padding: 0; /* Ajusta el padding si es necesario */
+ }
+
+ .sport-content {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en fila */
+    gap: 2rem; /* Espacio entre los párrafos */
+    flex: 1;
+    padding: 2rem;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    color: #333; /* Color de texto */
+    width: 70%;
+ }
+
+ .sport h2 {
+    font-family: Montserrat;
+    font-size: 6.5rem;
+    font-weight: 600;
+    color: #333; /* Color oscuro para resaltar el nombre */
+    margin-bottom: 1rem;
+ }
+
+    .sport-content p {
+        flex: 1;
+        width: 30%;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #444; /* Color de párrafo */
+    }
+
+    .btn-sport a {
+        font-family: Montserrat;
+        display: inline-block;
+        background-color: #347537a9;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+ /* sport end */
+
+@media (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-photo {
+        max-width: 100%;
+    }
+
+    .mini-photos {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
